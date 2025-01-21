@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html class="scroll-smooth font-relaway" lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="./script.js" defer></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Pacifico&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href="./css/output.css" rel="stylesheet">
+    <title>impro</title>
+</head>
+
+
+<body class="w-screen h-full overflow-y-scroll bg-gradient-to-b from-orange-200 to-rose-300">
+
+    <main class="md:w-10/12 mx-auto relative md:px-0 px-4 md:my-10 bg-neutral-600 rounded-xl overflow-hidden">
+        <!-- Nav -->
+        <nav class="bg-neutral-600 shadow-lg w-full z-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex justify-between items-center h-16">
+
+                    <!-- Logo -->
+                    <div class="flex-shrink-0">
+                        <a href="#portfolio" class="lg:text-xl md:text-lg text-sm font-bold text-gray-200">
+                            <span class="px-1 bg-orange-400 rounded-full animate-[ping_1.9s_linear_infinite]">P</span>
+                            <span class="px-1 bg-orange-400 rounded-full animate-[ping_2s_linear_infinite]">O</span>
+                            <span class="px-1 bg-orange-400 rounded-full animate-[ping_2.1s_linear_infinite]">R</span>
+                            <span class="px-1 bg-orange-400 rounded-full animate-[ping_2.2s_linear_infinite]">T</span>
+                            <span class="px-1 bg-orange-400 rounded-full animate-[ping_2.3s_linear_infinite]">F</span>
+                            <span class="px-1 bg-orange-400 rounded-full animate-[ping_2.4s_linear_infinite]">O</span>
+                            <span class="px-1 bg-orange-400 rounded-full animate-[ping_2.5s_linear_infinite]">L</span>
+                            <span class="px-1 bg-orange-400 rounded-full animate-[ping_2.6s_linear_infinite]">I</span>
+                            <span class="px-1 bg-orange-400 rounded-full animate-[ping_2.7s_linear_infinite]">O</span>
+                        </a>
+                    </div>
+
+                    <!--Menu DESKTOP-->
+                    <div class="hidden lg:flex space-x-8">
+                        <a href="#about" class="text-orange-400 hover:text-orange-500">A propos de moi</a>
+                        <a href="#projets" class="text-gray-300 hover:text-orange-500">Mes Projets</a>
+                        <a href="#testimonials" class="text-gray-300 hover:text-orange-500">Mes Expériences</a>
+                        <a href="#c" class="text-gray-300 hover:text-orange-500">Mes Compétences</a>
+                        <a href="#fun-facts" class="text-gray-300 hover:text-orange-500">Contact</a>
+                    </div>
+
+                    <!--Menu MOBILE Button -->
+                    <div class="lg:hidden flex items-center">
+                        <button id="mobile-menu-button" class="text-orange-200 hover:text-white focus:outline-none">
+                            <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h16m-7 6h7" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!--Menu MOBILE-->
+            <div id="mobile-menu" class="absolute inset-0 bg-gray-800 bg-opacity-50 z-50 hidden">
+                <div class="fixed inset-y-0 left-0 bg-black w-64 p-6 transform -translate-x-full transition-transform">
+                    <button id="close-menu-button"
+                        class="text-orange-300 hover:text-orange-600 focus:outline-none mb-4">
+                        <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </button>
+                    <nav class="space-y-4">
+                        <a href="#about" class="block text-orange-300 hover:text-orange-600">About</a>
+                        <a href="#what-i-do" class="block text-gray-400 hover:text-orange-400">What I Do</a>
+                        <a href="#testimonials" class="block text-gray-400 hover:text-orange-400">Testimonials</a>
+                        <a href="#clients" class="block text-gray-400 hover:text-orange-400">Clients</a>
+                        <a href="#fun-facts" class="block text-gray-400 hover:text-orange-400">Fun Facts</a>
+                    </nav>
+                </div>
+            </div>
+        </nav>
+
+        <div class="w-full h-full flex flex-col items-center">
+
+            <!-- a prpos de moi -->
+            <section class="w-full relative flex items-center flex-col md:flex-row" id="about">
+                <img class="w-2/4 md:w-1/2 lg:w-1/2" src="./images/portrait.jpg" alt="port image">
+                <!--  -->
+                <div
+                    class="md:absolute md:left-1/2 md:w-1/2 md:p-12 sm:p-6 p-4 flex flex-col justify-center bg-gradient-to-b from-gray-900 to-gray-600">
+                    <p class="text-white text-sm mb-1">Développeur WEB junior</p>
+                    <h2 class="text-white md:text-5xl text-2xl font-bold mb-4">Celia SANSANO</h2>
+                    <p class="text-gray-400 text-md mb-6">
+                        Développeur web junior, je suis passionnée et polyvalente et je fais preuve d’une grande
+                        adaptabilité. Mon parcours dans le
+                        monde du développement Web a été tout simplement exaltant, et je m'efforce constamment
+                        d'améliorer mes compétences et d'adopter les tendances
+                        émergentes de l'industrie.
+                    </p>
+                    <!-- My expertise lies in Vue, Nuxt, Svelt, Laravel and Nestjs and I thrive on transforming complex challenges into user-friendly solutions. -->
+                    <div>
+                        <a href="./CVCELIA_ SANSANO.pdf" target="_blank"
+                            class="md:px-6 px-4 py-2 text-white font-semibold  outline outline-orange-400 rounded-full hover:bg-orange-500 transform trasition delay-200">
+                            Download CV</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Portfolio -->
+            <section class="md:pt-20 pt-10 md:px-20 p-2" id="portfolio">
+                
+                <!-- Heading -->
+                <div class="w-fit">
+                    <h2 class="text-2xl font-bold text-white pb-2">Portfolio</h2>
+                    <div class="rounded-t-full border-[1px] border-gray-500 overflow-hidden">
+                        <hr class="border-3xl border-orange-400 w-3/4" />
+                    </div>
+                </div>
+
+                <div class="">
+                    <ul
+                        class="flex flex-col md:flex md:flex-row my-2 lg:m-2 bg-orange-50 rounded-lg overflow-hidden shadow-lg ">
+                        <!-- 1 -->
+                        <li class="md:w-1/3">
+                            <div class=" bg-orange-50 rounded-lg overflow-hidden shadow-lg m-4">
+                                <div>
+                                    <img class="w-auto h-40" src="./images/dessert1.png" alt="Sunset in the mountains">
+                                </div>
+                                <div class="px-6 py-4">
+                                    <h3 class="font-bold text-xl mb-2">The Coldest Sunset</h3>
+                                    <p class="text-gray-700 text-base">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia,
+                                        nulla!
+                                        Maiores et perferendis eaque, exercitationem praesentium nihil.
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <!-- 2 -->
+                        <li class=" md:w-1/3">
+                            <div class=" bg-orange-50 rounded-lg overflow-hidden shadow-lg m-4">
+                                <div>
+                                    <img class="w-auto h-40" src="./images/dessert1.png" alt="Sunset in the mountains">
+                                </div>
+                                <div class="px-6 py-4">
+                                    <h3 class="font-bold text-xl mb-2">The Coldest Sunset</h3>
+                                    <p class="text-gray-700 text-base">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia,
+                                        nulla!
+                                        Maiores et perferendis eaque, exercitationem praesentium nihil.
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <!-- 3 -->
+                        <li class=" md:w-1/3">
+                            <div class=" bg-orange-50 rounded-lg overflow-hidden shadow-lg m-4">
+                                <div>
+                                    <img class="w-auto h-40" src="./images/dessert1.png" alt="Sunset in the mountains">
+                                </div>
+                                <div class="px-6 py-4">
+                                    <h3 class="font-bold text-xl mb-2">The Coldest Sunset</h3>
+                                    <p class="text-gray-700 text-base">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia,
+                                        nulla!
+                                        Maiores et perferendis eaque, exercitationem praesentium nihil.
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Experiences -->
+            <section class="md:mt-20 mt-10 md:px-20 px-2" id="testimonial">
+
+                <!-- Heading -->
+                <div class="w-fit sm:mb-20 mb-10">
+                    <h2 class="text-2xl font-bold text-white pb-2">Expériences</h2>
+                    <div class="rounded-t-full border-[1px] border-gray-500 overflow-hidden">
+                        <hr class="border-3xl border-orange-400 w-1/2" />
+                    </div>
+                </div>
+
+                <section id="cv" class="md:flex md:flex-col bg-red-400 m-6 rounded-lg lg:m-0">
+                    <div>
+                        <span class="flex items-center">
+                            <span class="pr-6 mx-2 md:p-6">CV</span>
+                            <span class="h-px flex-1 bg-black"></span>
+                        </span>
+                    </div>
+                    <!-- colonne formation -->
+                    <div class="bg-lime-600 md:flex">
+                        <div class="m-6 rounded-lg md:w-1/2">
+                            <h2>🎓 Formations</h2>
+                            <ul class="flex flex-col my-2">
+                                <li class="">
+                                    <div class=" bg-orange-50 rounded-lg overflow-hidden shadow-lg m-4">
+                                        <div class="px-6 py-4">
+                                            <p class="font-bold">2025</p>
+                                            <p>TP Développeur Web - Web mobile</p>
+                                            <p>GRETA - Mende</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="">
+                                    <div class=" bg-orange-50 rounded-lg overflow-hidden shadow-lg m-4">
+                                        <div class="px-6 py-4">
+                                            <p class="font-bold">2006</p>
+                                            <p>BEPECASER</p>
+                                            <p>Brevet pour l'exercice de la profession d'enseignant de la conduite
+                                                automobile et de
+                                                la
+                                                sécurité routière</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="">
+                                    <div class=" bg-orange-50 rounded-lg overflow-hidden shadow-lg m-4">
+                                        <div class="px-6 py-4">
+                                            <p class="font-bold">2001</p>
+                                            <p>BAC - STI génie Électrotechnique</p>
+                                            <p>Lycée DHUODA - Nîmes</p>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class=" m-6 rounded-lg md:w-1/2">
+                            <h2>💼 Expériencess</h2>
+                            <ul class="flex flex-col my-2">
+                                <li class="">
+                                    <div class=" bg-orange-50 rounded-lg overflow-hidden shadow-lg m-4">
+                                        <div class="px-6 py-4">
+                                            <p class="font-bold">2005 - 2018</p>
+                                            <p>Auto-école Casses, Saint-Christol-lès-Alès</p>
+                                            <p>Enseignement de la conduite et de la sécurité routière. Suivi
+                                                personnalisé.</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="">
+                                    <div class=" bg-orange-50  rounded-lg overflow-hidden shadow-lg m-4">
+                                        <div class="px-6 py-4">
+                                            <p class="font-bold">2003-2004</p>
+                                            <p>Conseillère voyage - Lastminute.com</p>
+                                            <p>Gestion des réservations de vols, hôtels, et activités touristiques.
+                                                Travail en
+                                                open-space.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="">
+                                    <div class=" bg-orange-50 rounded-lg overflow-hidden shadow-lg m-4">
+                                        <div class="px-6 py-4">
+                                            <p class="font-bold">2002</p>
+                                            <p>Équipière polyvalente - McDonald's Alès</p>
+                                            <p>Collaboration avec l'équipe pour assurer un service de qualité et une
+                                                ambiance
+                                                agréable.</p>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+        </div>
+        </section>
+
+        <!-- Clientts -->
+        <section class="w-full sm:pt-20 pt-10 md:px-20 px-6" id="clients">
+            <!-- Heading -->
+            <div class="w-fit sm:mb-20 mb-10">
+                <h2 class="text-2xl font-bold text-white pb-2">Clients</h2>
+                <div class="rounded-t-full border-[1px] border-gray-500 overflow-hidden">
+                    <hr class="border-[3px] border-green-400 w-[60%]" />
+                </div>
+            </div>
+
+            <div class="w-full flex md:flex-nowrap flex-wrap gap-4 items-center justify-center">
+                <img class="lg:w-[15rem] w-[10rem] rounded-lg object-cover"
+                    src="https://images.unsplash.com/photo-1611944212129-29977ae1398c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHw5fHxmYWNlYm9vayUyMGxvZ298ZW58MHwwfHx8MTczNTI5MTQzMXww&ixlib=rb-4.0.3&q=80&w=1080"
+                    alt="clients" />
+                <img class="lg:w-[15rem] w-[10rem] rounded-lg object-cover"
+                    src="https://images.unsplash.com/photo-1611944212129-29977ae1398c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHw5fHxmYWNlYm9vayUyMGxvZ298ZW58MHwwfHx8MTczNTI5MTQzMXww&ixlib=rb-4.0.3&q=80&w=1080"
+                    alt="clients" />
+                <img class="lg:w-[15rem] w-[10rem] rounded-lg object-cover"
+                    src="https://images.unsplash.com/photo-1611944212129-29977ae1398c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHw5fHxmYWNlYm9vayUyMGxvZ298ZW58MHwwfHx8MTczNTI5MTQzMXww&ixlib=rb-4.0.3&q=80&w=1080"
+                    alt="clients" />
+            </div>
+        </section>
+
+        <!-- Fun Facts -->
+        <section class="w-full sm:py-20 py-10 md:px-20 px-6" id="fun-facts">
+            <!-- Heading -->
+            <div class="w-fit sm:mb-20 mb-10">
+                <h2 class="text-2xl font-bold text-white pb-2">Fun Facts</h2>
+                <div class="rounded-t-full border-[1px] border-gray-500 overflow-hidden">
+                    <hr class="border-[3px] border-green-400 w-[80%]" />
+                </div>
+            </div>
+
+            <div class="w-full grid gap-2 lg:grid-cols-4 sm:grid-cols-2 grid-cols-1">
+                <!-- 1 -->
+                <div
+                    class="flex flex-col gap-4 items-center justify-center border border-2 border-gray-400 p-6 rounded-lg text-gray-400">
+                    <span class="text-4xl">😁</span>
+                    <h3 class="sm:text-xl text-md font-bold text-gray-200">Happy Clients</h3>
+                    <span class="sm:text-5xl text-3xl font-semibold">400<sup>+</sup></span>
+                </div>
+                <!-- 2 -->
+                <div
+                    class="flex flex-col gap-4 items-center justify-center border border-2 border-gray-400 p-6 rounded-lg text-gray-400">
+                    <span class="text-4xl">😬</span>
+                    <h3 class="sm:text-xl text-md font-bold text-gray-200">Working Hours</h3>
+                    <span class="sm:text-5xl text-3xl font-semibold">7,845<sup>+</sup></span>
+                </div>
+                <!-- 3 -->
+                <div
+                    class="flex flex-col gap-4 items-center justify-center border border-2 border-gray-400 p-6 rounded-lg text-gray-400">
+                    <span class="text-4xl">👋</span>
+                    <h3 class="sm:text-xl text-md font-bold text-gray-200">Certification</h3>
+                    <span class="sm:text-5xl text-3xl font-semibold">77<sup>+</sup></span>
+                </div>
+                <!-- 4 -->
+                <div
+                    class="flex flex-col gap-4 items-center justify-center border border-2 border-gray-400 p-6 rounded-lg text-gray-400">
+                    <span class="text-4xl">😲</span>
+                    <h3 class="sm:text-xl text-md  font-bold text-gray-200">Portfolios</h3>
+                    <span class="sm:text-5xl text-3xl font-semibold">65<sup>+</sup></span>
+                </div>
+            </div>
+        </section>
+
+        <footer class="w-full mt-10 border-t-2 pt-4 pb-8 border-gray-500">
+            <div class="flex sm:flex-row flex-col sm:justify-between items-center md:px-20 px-4">
+                <div class="flex gap-4 items-center sm:text-xl text-sm text-gray-500">
+                    <a href="" class="hover:text-green-400">facebook</a>
+                    <a href="" class="hover:text-green-400">instagram</a>
+                    <a href="" class="hover:text-green-400">Linkedin</a>
+                </div>
+                <div class="text-lg text-gray-400">&copy;2024 Samuel Abera</div>
+            </div>
+        </footer>
+
+    </main>
+    </div>
+
+</body>
+
+</html>
