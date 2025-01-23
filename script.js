@@ -1,3 +1,5 @@
+// menu ************************************************************
+
 const mobileMenuButton = document.getElementById('mobile-menu-button');
 const mobileMenu = document.getElementById('mobile-menu');
 const closeMenuButton = document.getElementById('close-menu-button');
@@ -25,3 +27,49 @@ mobileMenu.addEventListener('click', (e) => {
         closeMenuButton.click();
     }
 });
+
+// *****************************************************************
+
+// async function loadProjects() {
+//     try {
+//         const response = await fetch('index.json');
+//         const projects = await response.json();
+//         const container = document.getElementById('projects-container');
+
+
+//         projets.forEach(projet => {
+//             const card =
+//                 <div>
+//                     <ul class="flex flex-col my-2 md:flex md:flex-row">
+//                         <li class=" md:w-1/3">
+//                             <div class=" bg-orange-50 rounded-lg overflow-hidden shadow-lg m-4">
+//                                 <div>
+//                                     <div>
+//                                         <a href="https://celia506.github.io/PastaLaVista/" target="blank">
+//                                             <img class="w-full h-40" src="./images/pastalavista.png"
+//                                                 alt="projet pasta la vista" />
+//                                         </a>
+//                                     </div>
+//                                 </div>
+//                                 <div class="px-6 py-4">
+//                                     <h3 class="font-bold text-xl mb-2">Pasta La Vista</h3>
+//                                     <p class="text-gray-700 text-base">
+//                                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla!
+//                                         Maiores et perferendis eaque, exercitationem praesentium nihil.
+//                                     </p>
+//                                 </div>
+//                             </div>
+//                         </li>
+//                     </ul>
+//                 </div>
+//                 ;
+//             container.innerHTML += card;
+//         });
+//     } catch (error) {
+//         console.error(error);
+//     }
+// }
+
+// docment.addEventListener('DOMContentLoaded', loadProjects);
+
+// *****************************************************************
