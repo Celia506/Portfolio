@@ -14,7 +14,7 @@
     <title>Portfolio</title>
 </head>
 
-<body class="bg-gradient-to-b from-primary via-second to-second min-h-screen ">
+<body id="body" class="bg-gradient-to-b from-primary via-second to-second min-h-screen ">
 
     <!-- header et nav -->
     <header class="relative h-16 md:h-36 lg:h-52 mx-6 md:mx-8 lg:mx-14 ">
@@ -24,7 +24,7 @@
                 <div class="flex justify-between items-center h-16">
 
                     <!-- Logo -->
-                    <div class="flex-shrink-0">
+                    <div class="flex-shrink-0 overflow-hidden">
                         <a href="#portfolio" class="lg:text-xl md:text-lg text-sm font-bold text-gray-200">
                             <span class="px-2 bg-orange-400 rounded-full animate-[ping_1.9s_linear_infinite]">P</span>
                             <span class="px-2 bg-orange-400 rounded-full animate-[ping_2s_linear_infinite]">O</span>
@@ -64,7 +64,7 @@
 
             <!--Menu MOBILE-->
             <div id="mobile-menu" class="absolute inset-0 bg-gray-800 bg-opacity-50 z-50 hidden">
-                <div
+                <div id="mobile-menu-content"
                     class="fixed inset-y-0 left-0 bg-neutral-600 w-64 p-6 transform -translate-x-full transition-transform">
                     <button id="close-menu-button"
                         class="text-orange-300 hover:text-orange-400 focus:outline-none mb-4">
@@ -97,8 +97,8 @@
                 <!--photo et contact-->
                 <div class="flex  w-full h-36 md:h-56 ">
                     <div
-                        class="absolute left-10 top-8 md:transform md:-translate-y-2/3 md:left-[50%] md:translate-x-[-50%]">
-                        <img class="w-20 md:w-40 h-auto rounded-3xl shadow-2xl shadow-zinc-900"
+                        class="absolute left-10 top-8 md:transform md:-translate-y-2/3 md:left-[50%] md:translate-x-[-50%] ">
+                        <img class="w-20 md:w-40 h-auto rounded-3xl shadow-2xl shadow-zinc-900 hover:transform hover:-translate-y-6 transition-transform"
                             src="./images/portrait.jpg" alt="Photo de profil">
                     </div>
                     <div
@@ -132,16 +132,17 @@
                         Mende, Lozère</div>
                 </div>
                 <div class=" flex justify-center space-x-8 md:space-x-10 m-4 align-middle">
-                    <a href="https://github.com/dashboard" target="_blank"
-                        class="w-10 md:w-10 h-auto outline outline-orange-400 rounded-sm hover:bg-gradient-to-t from-quatre to-cinq transform transition delay-100">
-                        <img
-                            src="https://icongr.am/devicon/github-original-wordmark.svg?size=55&color=currentColor"></a>
-                    <a href="https://linkedin-original.com" target="_blank"
-                        class="w-10 md:w-10 h-auto outline outline-orange-400 rounded-sm hover:bg-gradient-to-t from-quatre to-cinq transform transition delay-100">
-                        <img src="https://icongr.am/devicon/linkedin-original.svg?size=55&color=currentColor"></a>
-                    <a href="./CVCELIA_ SANSANO.pdf" target="_blank"
-                        class="md:px-6 px-4 py-2 text-gray-700 font-semibold  outline outline-orange-400 rounded-sm hover:bg-gradient-to-t from-quatre to-cinq transform transition delay-100">
-                        CV en PDF</a>
+                    <div class="w-10 md:w-12 p-1 h-auto outline outline-orange-400 rounded-sm hover:bg-gradient-to-t from-quatre to-cinq transform transition delay-100">
+                        <a href="https://github.com/dashboard" target="_blank">
+                            <img src="https://icongr.am/devicon/github-original-wordmark.svg?size=55&color=currentColor" alt="github"></a>
+                    </div>
+                    <div class="w-10 md:w-12 p-1 h-auto outline outline-orange-400 rounded-sm hover:bg-gradient-to-t from-quatre to-cinq transform transition delay-100">
+                        <a href="https://linkedin-original.com" target="_blank">
+                            <img src="https://icongr.am/devicon/linkedin-original.svg?size=55&color=currentColor" alt="linkedin"></a>
+                    </div>  
+                    <div class="md:px-4 px-4 py-3 text-gray-700 font-semibold  outline outline-orange-400 rounded-sm hover:bg-gradient-to-t from-quatre to-cinq transform transition delay-100"> 
+                        <a href="./CVCELIA_SANSANO.pdf" target="_blank">CV en PDF</a>
+                    </div> 
                 </div>
 
             </div>
@@ -166,8 +167,6 @@
 
             </div>
         </section>
-        </div>
-        </section>
 
         <section id="competences" class="bg-white m-6 rounded-lg shadow-lg lg:m-14">
             <h2>
@@ -176,16 +175,13 @@
                     <span class="h-px flex-1 bg-black"></span>
                 </span>
             </h2>
-            <div class=" flex justify-evenly p-5">
-                <img src="https://icongr.am/devicon/html5-original-wordmark.svg?size=108&color=currentColor" alt="html5"
-                    class="h-16 w-auto">
-                <img src="https://icongr.am/devicon/css3-original-wordmark.svg?size=108&color=currentColor" alt="css3"
-                    class="h-16 w-auto">
-                <img src="https://icongr.am/devicon/javascript-original.svg?size=108&color=currentColor"
-                    alt="Javascript" class="h-16 w-auto">
-                <img src="./images/icons8-tailwind-css.svg" alt="taimwind" class="h-16 w-auto">
-                <img src="./images/icons8-notion.svg" alt="notion" class="h-16 w-auto">
-                <img src="./images/icons8-figma.svg" alt="figma" class="h-16 w-auto">
+            <div class=" flex justify-evenly p-5 overflow-hidden">
+                <img src="https://icongr.am/devicon/html5-original-wordmark.svg?size=108&color=currentColor" alt="html5" class="h-8 md:h-16 w-auto animate-[pulse_0.8s_linear_infinite]">
+                <img src="https://icongr.am/devicon/css3-original-wordmark.svg?size=108&color=currentColor" alt="css3" class="h-8 md:h-16 w-auto animate-[pulse_1s_linear_infinite]">
+                <img src="https://icongr.am/devicon/javascript-original.svg?size=108&color=currentColor" alt="Javascript" class="h-8 md:h-16 w-auto animate-[pulse_1.2s_linear_infinite]">
+                <img src="./images/icons8-tailwind-css.svg" alt="taimwind" class="h-8 md:h-16 w-auto animate-[pulse_1.4s_linear_infinite]">
+                <img src="./images/icons8-notion.svg" alt="notion" class="h-8 md:h-16 w-auto animate-[pulse_1.6s_linear_infinite]">
+                <img src="./images/icons8-figma.svg" alt="figma" class="h-8 md:h-16 w-auto animate-[pulse_1.9s_linear_infinite]">
             </div>
         </section>
 
@@ -239,18 +235,19 @@
                             </div>
                         </div>
                     </li>
+
                     <!-- 3 -->
                     <li class=" md:w-1/3">
                         <div class=" bg-orange-50 rounded-lg overflow-hidden shadow-lg m-4">
                             <div>
                                 <div>
-                                    <a href="https://github.com/Celia506/luckyLuke" target="blank">
-                                        <img class="w-full h-40" src="./images/LuckyLuke.png" alt="projet lucky luke">
+                                    <a href="https://github.com/Celia506/Javascript" target="blank">
+                                        <img class="w-full h-40" src="./images/calendrier.png" alt="Javascript exo">
                                     </a>
                                 </div>
                             </div>
                             <div class="px-6 py-4">
-                                <h3 class="font-bold text-xl mb-2">The Coldest Sunset</h3>
+                                <h3 class="font-bold text-xl mb-2">Projets Javascript</h3>
                                 <p class="text-gray-700 text-base">
                                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla!
                                     Maiores et perferendis eaque, exercitationem praesentium nihil.
@@ -271,36 +268,34 @@
                 </span>
             </div>
             <!-- colonne formation -->
-            <div class="md:flex">
+            <div class="md:flex ">
                 <div class="m-6 rounded-lg md:w-1/2">
                     <h2>🎓 Formations</h2>
                     <ul class="flex flex-col my-2">
-                        <li class="">
-                            <div class=" bg-orange-50 rounded-lg overflow-hidden shadow-lg m-4">
+                        <li>
+                            <div class=" bg-zero rounded-lg overflow-hidden shadow-lg m-4">
                                 <div class="px-6 py-4">
                                     <p class="font-bold">2025</p>
-                                    <p>TP Développeur Web - Web mobile</p>
+                                    <p><strong>TP Développeur Web - Web mobile</strong></p>
                                     <p>GRETA - Mende</p>
                                 </div>
                             </div>
                         </li>
-                        <li class="">
-                            <div class=" bg-orange-50 rounded-lg overflow-hidden shadow-lg m-4">
+                        <li>
+                            <div class=" bg-primary rounded-lg overflow-hidden shadow-lg m-4">
                                 <div class="px-6 py-4">
                                     <p class="font-bold">2006</p>
-                                    <p>BEPECASER</p>
+                                    <p><strong>BEPECASER</strong></p>
                                     <p>Brevet pour l'exercice de la profession d'enseignant de la conduite automobile et
-                                        de
-                                        la
-                                        sécurité routière</p>
+                                        de la sécurité routière</p>
                                 </div>
                             </div>
                         </li>
-                        <li class="">
-                            <div class=" bg-orange-50 rounded-lg overflow-hidden shadow-lg m-4">
+                        <li>
+                            <div class=" bg-zero rounded-lg overflow-hidden shadow-lg m-4">
                                 <div class="px-6 py-4">
                                     <p class="font-bold">2001</p>
-                                    <p>BAC - STI génie Électrotechnique</p>
+                                    <p><strong> BAC - STI </strong>génie Électrotechnique</p>
                                     <p>Lycée DHUODA - Nîmes</p>
                                 </div>
                             </div>
@@ -311,19 +306,19 @@
                     <h2>💼 Expériencess</h2>
                     <ul class="flex flex-col my-2">
                         <li class="">
-                            <div class=" bg-orange-50 rounded-lg overflow-hidden shadow-lg m-4">
+                            <div class=" bg-primary rounded-lg overflow-hidden shadow-lg m-4">
                                 <div class="px-6 py-4">
                                     <p class="font-bold">2005 - 2018</p>
-                                    <p>Auto-école Casses, Saint-Christol-lès-Alès</p>
+                                    <p><strong> Auto-école Casses</strong>, Saint-Christol-lès-Alès</p>
                                     <p>Enseignement de la conduite et de la sécurité routière. Suivi personnalisé.</p>
                                 </div>
                             </div>
                         </li>
                         <li class="">
-                            <div class=" bg-orange-50  rounded-lg overflow-hidden shadow-lg m-4">
+                            <div class=" bg-zero  rounded-lg overflow-hidden shadow-lg m-4">
                                 <div class="px-6 py-4">
                                     <p class="font-bold">2003-2004</p>
-                                    <p>Conseillère voyage - Lastminute.com</p>
+                                    <p><strong> Conseillère voyage </strong>- Lastminute.com</p>
                                     <p>Gestion des réservations de vols, hôtels, et activités touristiques. Travail en
                                         open-space.
                                     </p>
@@ -331,10 +326,10 @@
                             </div>
                         </li>
                         <li class="">
-                            <div class=" bg-orange-50 rounded-lg overflow-hidden shadow-lg m-4">
+                            <div class=" bg-primary rounded-lg overflow-hidden shadow-lg m-4">
                                 <div class="px-6 py-4">
                                     <p class="font-bold">2002</p>
-                                    <p>Équipière polyvalente - McDonald's Alès</p>
+                                    <p><strong> Équipière polyvalente </strong>- McDonald's Alès</p>
                                     <p>Collaboration avec l'équipe pour assurer un service de qualité et une ambiance
                                         agréable.</p>
                                 </div>
@@ -355,19 +350,18 @@
             </h2>
             <div class=" mx-auto bg-white p-6 rounded-lg shadow-md">
                 <div class="flex flex-col md:flex-row justify-between mb-6">
-                    <div class="bg-amber-50 p-4 rounded-lg mb-4 md:mb-0 md:mr-0 shadow-md">
+                    <div class="bg-zero p-4 rounded-lg mb-4 md:mb-0 md:mr-0 shadow-md hover:scale-110 transition-transform">
                         <h2 class="text-lg font-semibold mb-2">📞 Téléphone:</h2>
                         <p>07 65 21 40 06</p>
                     </div>
-                    <div class="bg-amber-50 p-4 rounded-lg shadow-md">
+                    <div class="bg-zero p-4 rounded-lg shadow-md hover:scale-110 transition-transform">
                         <h2 class="text-lg font-semibold mb-2">📧 Email:</h2>
                         <p>celia.sansano@gmail.com</p>
                     </div>
                 </div>
                 <div class="bg-trois p-6 rounded-lg">
                     <p class="mb-4 overflow-hidden">Je suis toujours disponible pour échanger sur de nouveaux projets,
-                        des opportunités
-                        technologiques et des collaborations.</span></p>
+                        des opportunités technologiques et des collaborations.</p>
                     <form>
                         <div class="mb-4">
                             <label for="name" class="block text-sm font-medium text-gray-700">Nom:</label>

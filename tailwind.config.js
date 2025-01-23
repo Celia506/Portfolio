@@ -4,11 +4,12 @@ module.exports = {
   theme: {
     extend: {
       colors:{
-        primary: '#F2D8B3',
+        zero:'#FDF5ED',
+        primary: '#F5E0C6',        
         second:'#D9B788',
         trois:'#FFFEFC',
         quatre:'#FF9C1A',
-        cinq:'#E80505',      
+        cinq:'#E80505',
       }
     },fontFamily: {
       relaway: ['Raleway','serif'],
