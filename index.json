@@ -1,30 +1,28 @@
-[
 {
-    "titre":"Lucky Luke",
-    "descriptif":"Crer la page web d'un restaurant Italien",
-    "image":"./images/pastalavista.png",
-    "lienDemo":"",
-    "lienGithub":"https://celia506.github.io/PastaLaVista/"
-},
-{
-    "titre":"",
-    "descriptif":"",
-    "image":"",
-    "lienDemo":"",
-    "lienGithub":""
-},
-{
-    "titre":"",
-    "descriptif":"",
-    "image":"",
-    "lienDemo":"",
-    "lienGithub":""
-},
-{
-    "titre":"",
-    "descriptif":"",
-    "image":"",
-    "lienDemo":"",
-    "lienGithub":""
+    "projects": [
+        {
+            "title": "Calculateur de budget",
+            "description": "Description courte / objectif du projet 1",
+            "image": "https://placecats.com/millie_neo/300/200",
+            "demoLink": "https://example.com/demo1",
+            "githubLink": "https://github.com/username/project1",
+            "techno": ["HTML5", "TailwindCSS", "JavaScript"]
+        },
+        {
+            "title": "Tirage de la galette des rois",
+            "description": "Application simple de tirage de la galette des rois <br> test a la ligne",
+            "image": "https://placecats.com/bella/300/200",
+            "demoLink": "https://example.com/demo2",
+            "githubLink": "https://github.com/username/project2",
+            "techno": ["CSS", "JavaScript"]
+        },
+        {
+            "title": "Tirage de la galette des rois",
+            "description": "Description courte / objectif du projet 2",
+            "image": "https://placecats.com/millie_neo/300/200",
+            "demoLink": "https://example.com/demo2",
+            "githubLink": "https://github.com/username/project2",
+            "techno": ["HTML5", "TailwindCSS", "JavaScript"]
+        }
+    ]
 }
-]
