@@ -1,44 +1,36 @@
 {
     "projects": [
         {
-            "title": "LUCKY LUKE",
+            "title": "Pasta la vista",
+            "description": "resto italienhdfh",
+            "image": "./images/PastaLaVista.png",
+            "demoLink": "https://celia506.github.io/pastaLaVista/",
+            "githubLink": "https://github.com/Celia506/pastaLaVista",
+            "techno": ["HTML5","CSS","TailwindCSS", "JavaScript"]
+        },
+        {
+            "title": "Lucky Luke",
             "description": "Creation d'une page web sur un personnage de notre choix",
             "image": "./images/LuckyLuke.png",
             "demoLink": "https://celia506.github.io/luckyLuke/",
-            "githubLink": "https://github.com/username/project1",
+            "githubLink": "https://github.com/Celia506/luckyLuke",
             "techno": ["HTML5", "CSS", "JavaScript"]
         },
         {
-            "title": "Tirage de la galette des rois",
-            "description": "Application simple de tirage au sort pour le partage de la galette des rois",
-            "image": "./images/LuckyLuke.png",
-            "demoLink": "https://example.com/demo2",
-            "githubLink": "https://github.com/username/project2",
-            "techno": ["CSS", "JavaScript"]
+            "title": "Calendrier de l'avent",
+            "description": "Calendrier du Geek",
+            "image": "./images/calendrier.png",
+            "demoLink": "https://celia506.github.io/calendrierAvent/",
+            "githubLink": "https://github.com/Celia506/calendrierAvent",
+            "techno": ["HTML5", "CSS", "JavaScript"]
         },
         {
-            "title": "Tirage de la galette des rois",
-            "description": "Description courte / objectif du projet 2",
-            "image": "./images/LuckyLuke.png",
-            "demoLink": "https://example.com/demo2",
-            "githubLink": "https://github.com/username/project2",
-            "techno": ["HTML5", "TailwindCSS", "JavaScript"]
-        },
-        {
-            "title": "Tirage de la galette des rois",
-            "description": "Description courte / objectif du projet 2",
-            "image": "./images/LuckyLuke.png",
-            "demoLink": "https://example.com/demo2",
-            "githubLink": "https://github.com/username/project2",
-            "techno": ["HTML5", "TailwindCSS", "JavaScript"]
-        },
-        {
-            "title": "Tirage de la galette des rois",
-            "description": "Description courte / objectif du projet 2",
-            "image": "./images/LuckyLuke.png",
-            "demoLink": "https://example.com/demo2",
-            "githubLink": "https://github.com/username/project2",
-            "techno": ["HTML5", "TailwindCSS", "JavaScript"]
+            "title": "Tirage au sort ",
+            "description": "Tirage au sort d'un nom",
+            "image": "./images/tiragesort.png",
+            "demoLink": "https://celia506.github.io/tirageAuSort/",
+            "githubLink": "https://github.com/Celia506/tirageAuSort",
+            "techno": ["HTML5", "CSS", "JavaScript"]
         }
     ]
 }

@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", () => {
             data.projects.forEach(project => {
 
                 const card = document.createElement('div');
-                card.className = 'card class =" flex flex-row flex-wrap my-4 md:flex md:flex-col bg-trois rounded-lg overflow-hidden shadow-lg m-4';
+
 
                 const techList = project.techno.map(tech => {
                     let colorClass;
@@ -64,29 +64,32 @@ document.addEventListener("DOMContentLoaded", () => {
                         default:
                             colorClass = 'font-semibold bg-gray-900';
                     }
-                    return `<span class="text-white text-xs py-1 px-2 m-4 rounded ${colorClass} mr-2 mb-2">${tech}</span>`;
+                    return `<span class="text-white text-xs py-1 px-2 m-4 gap-2 rounded ${colorClass} mr-2 mb-2">${tech}</span>`;
                 }).join('');
 
                 card.innerHTML = `
-                <div class="bg-primary rounded-lg overflow-hidden w-auto m-auto shadow-lg divide-x-8">
-                    <img src="${project.image}" alt="${project.title}" class="w-auto md:h-40 h-32 m-auto shadow-lg">
-                </div>
-                <div  class="px-6 py-4">   
-                    <h2 class="font-bold text-xl m-2">${project.title}</h2>
-                    <p class="text-gray-700 text-base flex flex-wrap m-2">${project.description}</p>
-                </div>
-                <div class=" flex flex-wrap mb-2 justify-center align-middle">${techList}</div>
-                <div class="flex justify-evenly m-2">
-                    <a href="${project.demoLink}" target="blank" class="text-gray-500 hover:underline">
-                        <img src="./assets/logos/smallLink.svg" alt="Demo Link">
-                    </a>
-                    <a href="${project.githubLink}" target="blank" class="text-gray-500 hover:underline">
-                        <img src="./assets/logos/smallGithub.svg" alt="GitHub Link">
-                    </a>
-                </div>
+                    <div class="bg-primary max-w-sm rounded overflow-hidden shadow-lg h-full flex flex-col ">
+                        <a href="${project.demoLink}" target="blank"><img class=" w-full shadow-md" src="${project.image}" alt="${project.title}"></a>
+                        <div class="font-bold text-xl m-2 text-center">${project.title}</div>
+                        <div class="bg-zero px-2 py-2 flex-grow flex-col text-center">
+                            <p class="text-gray-700 text-base  px-4">${project.description}</p>
+                            <span class=" inline-block  p-3">
+                                <a href="${project.demoLink}" target="blank">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-7">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
+                                    </svg>
+                                </a>
+                            </span>
+                            <span class=" inline-block   text-gray-700 p-3">
+                                <a href="${project.githubLink}" target="blank">
+                                    <img src="./images/icons8-github.svg" alt="Github Link">
+                                </a>
+                            </span>
+                        </div>
+                        <div class=" flex flex-wrap mb-2 justify-center align-middle">${techList}
+                        </div>
+                    </div>
             `;
-
-
                 container.appendChild(card);
             });
         });
