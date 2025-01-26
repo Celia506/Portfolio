@@ -18,7 +18,7 @@
     <!-- header et nav -->
     <header class="relative h-16 md:h-36 lg:h-52 mx-6 md:mx-8 lg:mx-14 md:pt-3">
 
-        <nav class="bg-zinc-500 shadow-md w-full z-50 rounded-lg">
+        <nav class="bg-zinc-600 shadow-md w-full z-50 rounded-lg">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="flex justify-between items-center h-16">
 
@@ -39,7 +39,7 @@
 
                     <!--Menu DESKTOP-->
                     <div class="hidden lg:flex space-x-8">
-                        <a href="#apropos" id="apropos" class="text-orange-300 hover:text-orange-400">A propos de moi</a>
+                        <a href="#aPropos" id="aPropos" class="text-orange-300 hover:text-orange-400">A propos de moi</a>
                         <a href="#projets" class="text-gray-300 hover:text-orange-300">Mes projets</a>
                         <a href="#competences" class="text-gray-300 hover:text-orange-300">Mes Compétences</a>
                         <a href="#experiences" class="text-gray-300 hover:text-orange-300">Mes Expériences</a>
@@ -60,9 +60,9 @@
             </div>
 
             <!--Menu MOBILE-->
-            <div id="mobile-menu" class="absolute inset-0 bg-gray-800 bg-opacity-50 rounded-lg z-50 hidden">
+            <div id="mobile-menu" class="absolute inset-0 bg-zinc-700 bg-opacity-50 rounded-lg z-50 hidden">
                 <div id="mobile-menu-content"
-                    class="fixed inset-y-0 left-0 bg-zinc-500 w-64 p-6 transform -translate-x-full transition-transform">
+                    class="fixed inset-y-0 left-0 bg-zinc-600 w-64 p-6 transform -translate-x-full transition-transform">
                     <button id="close-menu-button"
                         class="text-orange-300 hover:text-orange-400 focus:outline-none mb-4">
                         <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
@@ -72,7 +72,7 @@
                         </svg>
                     </button>
                     <nav class="space-y-4">
-                        <a href="#apropos" class="block text-orange-300 hover:text-orange-400">A propos de moi</a>
+                        <a href="#aPropos" class="block text-orange-300 hover:text-orange-400">A propos de moi</a>
                         <a href="#competences" class="block text-gray-300 hover:text-orange-300">Mes Compétences</a>
                         <a href="#projets" class="block text-gray-300 hover:text-orange-300">Mes Projets</a>
                         <a href="#experiences" class="block text-gray-300 hover:text-orange-300">Mes Expériences</a>
@@ -230,7 +230,7 @@
 
 
         <!-- (2) section projets  -->
-        <section id="projets" class="bg-white rounded-lg lg:pb-4 shadow-lg m-6 lg:m-14">
+        <section id="projets" class="bg-white rounded-lg p-4 shadow-lg m-6 lg:m-14">
             <h2 class="p-4">
                 <span class="flex items-center">
                     <span class="pr-6 mx-2 md:p-6 text-xl">Mes Projets</span>
@@ -239,7 +239,7 @@
             </h2>
 
             <!-- liste projets -->
-            <div id="projects-container" class=" gap-y-8 md:w-auto justify-evenly flex flex-wrap overflow-auto">
+            <div id="projects-container" class="gap-y-8 md:w-auto justify-evenly flex flex-wrap overflow-auto pb-2 ">
                 <!-- Cards ici depuis script.js  -->
             </div>
         </section>
@@ -373,8 +373,8 @@
     </main>
 
     <!-- bouton haut de page -->
-    <div id="scrollButton" class="duration-500 fixed bottom-2 -right-1 md:bottom-4 p-4 hover:scale-105">
-        <a href="#apropos">
+    <div id="scrollButton" class="hidden fixed bottom-2 -right-1 md:bottom-4 p-4 hover:scale-105">
+        <a href="#aPropos">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white"
                 class="size-6 md:size-8 bg-second rounded-full">
                 <path fill-rule="evenodd"

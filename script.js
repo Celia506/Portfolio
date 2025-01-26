@@ -68,7 +68,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 }).join('');
 
                 card.innerHTML = `
-                    <div class="bg-primary max-w-sm rounded overflow-hidden shadow-lg h-full flex flex-col ">
+                    <div class="bg-primary max-w-sm rounded-lg overflow-hidden shadow-md shadow-400 h-full flex flex-col ">
                         <a href="${project.demoLink}" target="blank"><img class=" w-full shadow-md" src="${project.image}" alt="${project.title}"></a>
                         <div class="font-bold text-xl m-2 text-center">${project.title}</div>
                         <div class="bg-zero px-2 py-2 flex-grow flex-col text-center">
@@ -102,10 +102,12 @@ document.addEventListener("DOMContentLoaded", () => {
 window.addEventListener('scroll', function() {
     var scrollButton = document.getElementById("scrollButton");
 
-    // Si le scroll est moins de 100 pixels : cacher le bouton
-    if (document.documentElement.scrollTop < 100) {
-        scrollButton.classList.add("hidden");
-    } else {
-        scrollButton.classList.remove("hidden");
+    if (scrollButton) {
+        // Si le scroll est moins de 100 pixels : cacher le bouton
+        if (document.documentElement.scrollTop < 100) {
+            scrollButton.classList.add("hidden");
+        } else {
+            scrollButton.classList.remove("hidden");
+        }
     }
 });
