@@ -2,15 +2,15 @@
     "projects": [
         {
             "title": "Pasta la vista",
-            "description": "resto italienhdfh",
+            "description": "Création d'une page web d'un restaurant italien",
             "image": "./images/PastaLaVista.png",
             "demoLink": "https://celia506.github.io/pastaLaVista/",
             "githubLink": "https://github.com/Celia506/pastaLaVista",
-            "techno": ["HTML5","CSS","TailwindCSS", "JavaScript"]
+            "techno": ["HTML5","CSS","JavaScript"]
         },
         {
             "title": "Lucky Luke",
-            "description": "Creation d'une page web sur un personnage de notre choix",
+            "description": "Elaboration d'une page web sur un personnage de notre choix en suivant un zoning précis.",
             "image": "./images/LuckyLuke.png",
             "demoLink": "https://celia506.github.io/luckyLuke/",
             "githubLink": "https://github.com/Celia506/luckyLuke",
@@ -31,6 +31,14 @@
             "demoLink": "https://celia506.github.io/tirageAuSort/",
             "githubLink": "https://github.com/Celia506/tirageAuSort",
             "techno": ["HTML5", "CSS", "JavaScript"]
+        },
+        {
+            "title": "Portfolio",
+            "description": "Création de mon portfolio",
+            "image": "./images/portfolio.png",
+            "demoLink": "https://celia506.github.io/portfolio/",
+            "githubLink": "https://github.com/Celia506/portfolio",
+            "techno": ["HTML5", "TailwindCSS", "JavaScript"]
         }
     ]
 }
