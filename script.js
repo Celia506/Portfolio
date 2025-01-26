@@ -94,3 +94,18 @@ document.addEventListener("DOMContentLoaded", () => {
             });
         });
 });
+
+
+// *************************************************
+// bouton haut de page 
+
+window.addEventListener('scroll', function() {
+    var scrollButton = document.getElementById("scrollButton");
+
+    // Si le scroll est moins de 100 pixels : cacher le bouton
+    if (document.documentElement.scrollTop < 100) {
+        scrollButton.classList.add("hidden");
+    } else {
+        scrollButton.classList.remove("hidden");
+    }
+});
