@@ -3,7 +3,7 @@
         {
             "title": "Pasta la vista",
             "description": "Création d'une page web d'un restaurant italien",
-            "image": "images/pastalavista.png",
+            "image": "./images/pastalavista.png",
             "demoLink": "https://celia506.github.io/pastaLaVista/",
             "githubLink": "https://github.com/Celia506/pastaLaVista",
             "techno": ["HTML5","CSS","JavaScript"]
