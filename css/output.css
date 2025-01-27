@@ -1608,6 +1608,10 @@ video {
     display: flex;
   }
 
+  .md\:hidden {
+    display: none;
+  }
+
   .md\:size-8 {
     width: 2rem;
     height: 2rem;
