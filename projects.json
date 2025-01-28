@@ -1,6 +1,22 @@
 {
     "projects": [
         {
+            "title": "Tirage au sort ",
+            "description": "Tirage au sort d'un nom",
+            "image": "./images/tiragesort.png",
+            "demoLink": "https://celia506.github.io/tirageAuSort/",
+            "githubLink": "https://github.com/Celia506/tirageAuSort",
+            "techno": ["HTML5", "CSS", "JavaScript"]
+        },
+        {
+            "title": "Calendrier de l'avent",
+            "description": "Calendrier du Geek",
+            "image": "./images/calendrier.png",
+            "demoLink": "https://celia506.github.io/calendrierAvent/",
+            "githubLink": "https://github.com/Celia506/calendrierAvent",
+            "techno": ["HTML5", "CSS", "JavaScript"]
+        },
+        {
             "title": "Pasta la vista",
             "description": "Création d'une page web d'un restaurant italien",
             "image": "./images/pastalavista.png",
@@ -17,28 +33,12 @@
             "techno": ["HTML5", "CSS", "JavaScript"]
         },
         {
-            "title": "Calendrier de l'avent",
-            "description": "Calendrier du Geek",
-            "image": "./images/calendrier.png",
-            "demoLink": "https://celia506.github.io/calendrierAvent/",
-            "githubLink": "https://github.com/Celia506/calendrierAvent",
-            "techno": ["HTML5", "CSS", "JavaScript"]
-        },
-        {
-            "title": "Tirage au sort ",
-            "description": "Tirage au sort d'un nom",
-            "image": "./images/tiragesort.png",
-            "demoLink": "https://celia506.github.io/tirageAuSort/",
-            "githubLink": "https://github.com/Celia506/tirageAuSort",
-            "techno": ["HTML5", "CSS", "JavaScript"]
-        },
-        {
             "title": "Portfolio",
             "description": "Création de mon portfolio",
             "image": "./images/portfolio.png",
             "demoLink": "https://celia506.github.io/portfolio/",
             "githubLink": "https://github.com/Celia506/portfolio",
-            "techno": ["HTML5", "TailwindCSS", "JavaScript"]
+            "techno": ["HTML5", "TailwindCSS", "JavaScript", "JSON"]
         }
     ]
 }

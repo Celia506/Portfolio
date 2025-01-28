@@ -61,8 +61,14 @@ document.addEventListener("DOMContentLoaded", () => {
                         case 'JavaScript':
                             colorClass = 'font-semibold bg-yellow-500';
                             break;
+                        case 'JSON':
+                            colorClass = 'font-semibold bg-green-500';
+                            break;
+                        case 'PHP':
+                            colorClass = 'font-semibold bg-orange-500';
+                            break;
                         default:
-                            colorClass = 'font-semibold bg-gray-900';
+                            colorClass = 'font-semibold bg-gray-800';
                     }
                     return `<span class="text-white text-xs py-1 px-2 m-4 gap-2 rounded ${colorClass} mr-2 mb-2">${tech}</span>`;
                 }).join('');
