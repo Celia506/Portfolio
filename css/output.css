@@ -1140,9 +1140,9 @@ video {
   background-color: rgb(31 41 55 / var(--tw-bg-opacity, 1));
 }
 
-.bg-gray-900 {
+.bg-green-500 {
   --tw-bg-opacity: 1;
-  background-color: rgb(17 24 39 / var(--tw-bg-opacity, 1));
+  background-color: rgb(34 197 94 / var(--tw-bg-opacity, 1));
 }
 
 .bg-neutral-600 {
@@ -1160,9 +1160,9 @@ video {
   background-color: rgb(251 146 60 / var(--tw-bg-opacity, 1));
 }
 
-.bg-pink-500 {
+.bg-orange-500 {
   --tw-bg-opacity: 1;
-  background-color: rgb(236 72 153 / var(--tw-bg-opacity, 1));
+  background-color: rgb(249 115 22 / var(--tw-bg-opacity, 1));
 }
 
 .bg-primary {
@@ -1213,16 +1213,6 @@ video {
 .bg-zinc-700 {
   --tw-bg-opacity: 1;
   background-color: rgb(63 63 70 / var(--tw-bg-opacity, 1));
-}
-
-.bg-orange-500 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(249 115 22 / var(--tw-bg-opacity, 1));
-}
-
-.bg-green-500 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(34 197 94 / var(--tw-bg-opacity, 1));
 }
 
 .bg-opacity-50 {
@@ -1585,10 +1575,6 @@ video {
 }
 
 @media (min-width: 768px) {
-  .md\:fixed {
-    position: fixed;
-  }
-
   .md\:bottom-4 {
     bottom: 1rem;
   }
@@ -1787,18 +1773,6 @@ video {
 }
 
 @media (min-width: 1024px) {
-  .lg\:fixed {
-    position: fixed;
-  }
-
-  .lg\:-right-1 {
-    right: -0.25rem;
-  }
-
-  .lg\:bottom-4 {
-    bottom: 1rem;
-  }
-
   .lg\:m-14 {
     margin: 3.5rem;
   }
@@ -1816,11 +1790,6 @@ video {
     display: none;
   }
 
-  .lg\:size-8 {
-    width: 2rem;
-    height: 2rem;
-  }
-
   .lg\:h-52 {
     height: 13rem;
   }
@@ -1833,15 +1802,6 @@ video {
     --tw-space-x-reverse: 0;
     margin-right: calc(2.5rem * var(--tw-space-x-reverse));
     margin-left: calc(2.5rem * calc(1 - var(--tw-space-x-reverse)));
-  }
-
-  .lg\:rounded-full {
-    border-radius: 9999px;
-  }
-
-  .lg\:bg-second {
-    --tw-bg-opacity: 1;
-    background-color: rgb(217 183 136 / var(--tw-bg-opacity, 1));
   }
 
   .lg\:p-4 {
@@ -1870,11 +1830,5 @@ video {
   .lg\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
-  }
-
-  .lg\:hover\:scale-105:hover {
-    --tw-scale-x: 1.05;
-    --tw-scale-y: 1.05;
-    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
 }

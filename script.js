@@ -110,10 +110,10 @@ window.addEventListener('scroll', function() {
 
     if (scrollButton) {
         // Si le scroll est moins de 100 pixels : cacher le bouton
-        if (document.documentElement.scrollTop < 100) {
-            scrollButton.classList.add("hidden");
-        } else {
+        if (document.documentElement.scrollTop > 100) {
             scrollButton.classList.remove("hidden");
+        } else {
+            scrollButton.classList.add("hidden");
         }
     }
 });
