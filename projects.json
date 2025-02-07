@@ -39,6 +39,14 @@
             "demoLink": "https://celia506.github.io/portfolio/",
             "githubLink": "https://github.com/Celia506/portfolio",
             "techno": ["HTML5", "TailwindCSS", "JavaScript", "JSON"]
+        },
+        {
+            "title": "Trombinoscope",
+            "description": "Création trombinoscope",
+            "image": "./images/trombinoscope.png",
+            "demoLink": "hhttps://celia506.github.io/trombinoscope/",
+            "githubLink": "https://github.com/Celia506/trombinoscope",
+            "techno": ["HTML5", "CSS", "JavaScript", "API"]
         }
     ]
 }

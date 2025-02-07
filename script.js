@@ -64,6 +64,9 @@ document.addEventListener("DOMContentLoaded", () => {
                         case 'JSON':
                             colorClass = 'font-semibold bg-green-500';
                             break;
+                        case 'API':
+                            colorClass = 'font-semibold bg-pink-500';
+                            break;
                         case 'PHP':
                             colorClass = 'font-semibold bg-orange-500';
                             break;

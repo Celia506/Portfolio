@@ -40,12 +40,12 @@
 
                     <!--Menu DESKTOP-->
                     <div class="hidden lg:flex space-x-8">
-                        <a href="#aPropos" id="aPropos" class="text-orange-300 hover:text-orange-400">A propos de
+                        <a href="#aPropos" id="aPropos" class="text-orange-300 hover:text-orange-400 text-lg">A propos de
                             moi</a>
-                        <a href="#projets" class="text-gray-300 hover:text-orange-300">Mes projets</a>
-                        <a href="#competences" class="text-gray-300 hover:text-orange-300">Mes Compétences</a>
-                        <a href="#experiences" class="text-gray-300 hover:text-orange-300">Mes Expériences</a>
-                        <a href="#contact" class="text-gray-300 hover:text-orange-300">Contact</a>
+                        <a href="#projets" class="text-gray-300 hover:text-orange-300 text-lg">Mes projets</a>
+                        <a href="#competences" class="text-gray-300 hover:text-orange-300 text-lg">Mes Compétences</a>
+                        <a href="#experiences" class="text-gray-300 hover:text-orange-300 text-lg">Mes Expériences</a>
+                        <a href="#contact" class="text-gray-300 hover:text-orange-300 text-lg">Contact</a>
                     </div>
 
                     <!--Menu MOBILE Button -->
@@ -90,14 +90,14 @@
         <!-- section 1 -->
         <section class="md:flex md:justify-between m-6 lg:m-14 gap-4 ">
 
-            <!-- cadre gauche container-->
+            <!-- container gauche avec portrait-->
             <div class="p-4 bg-white rounded-lg shadow-lg text-center relative md:w-1/3">
 
-                <!--photo et contact-->
+                <!--photo et nom -->
                 <div class="flex  w-full h-36 md:h-56 ">
                     <div
                         class="absolute left-10 top-8 md:transform md:-translate-y-2/3 md:left-[50%] md:translate-x-[-50%] ">
-                        <img class="w-20 md:w-32 lg:w-44 h-auto rounded-3xl shadow-sm md:shadow-xl shadow-zinc-700 hover:transform hover:-translate-y-6 transition-transform"
+                        <img class="w-20 md:w-32 lg:w-44 h-auto rounded-3xl shadow-sm md:shadow-xl shadow-zinc-700 hover:transform hover:-translate-y-4 transition-transform"
                             src="./images/portrait.jpg" alt="Photo de profil">
                     </div>
                     <div
@@ -130,6 +130,8 @@
                         </svg>
                         Mende, Lozère</div>
                 </div>
+
+                <!-- liens contact et CV-->
                 <div class="flex justify-center space-x-8 md:space-x-2 lg:space-x-10 m-4 align-middle">
                     <div
                         class="w-10 md:w-12 p-1 h-auto outline outline-orange-400 rounded-sm hover:bg-gradient-to-r from-orange-400 to-orange-300">
@@ -157,7 +159,7 @@
 
             </div>
 
-            <!--A propos -->
+            <!--container 'A propos' -->
             <div class=" mt-4 md:mt-0 rounded-lg bg-white shadow-lg md:w-2/3 ">
                 <div class=" text-center p-1 md:p-2 lg:p-4 ">
                     <h2 class="py-2">
@@ -186,39 +188,46 @@
                 </span>
             </h2>
             <div class=" flex flex-wrap justify-evenly p-4 md:mx-4 overflow-hidden">
-                <div class="flex flex-col items-center px-4">
+                <div class="flex flex-col items-center shadow-md px-4 transition-shadow duration-300 
+                hover:shadow-2xl">
                     <img src="./images/icons8-html.svg" alt="html5"
-                        class="h-8 md:h-16 w-auto animate-[pulse_1.5s_linear_infinite]">
+                        class="h-8 md:h-16 w-auto">
                     <p>HTML5</p>
                 </div>
-                <div class="flex flex-col items-center  px-4">
+                <div class="flex flex-col items-center shadow-md px-4 transition-shadow duration-300 
+                hover:shadow-2xl">
                     <img src="./images/icons8-css.svg" alt="css3"
-                        class="h-8 md:h-16 w-auto animate-[pulse_1.6s_linear_infinite]">
+                        class="h-8 md:h-16 w-auto">
                     <p>CSS3</p>
                 </div>
-                <div class="flex flex-col items-center  px-4">
+                <div class="flex flex-col items-center shadow-md px-4 transition-shadow duration-300 
+                hover:shadow-2xl">
                     <img src="./images/icons8-github.svg" alt="github"
-                        class="h-8 md:h-16 w-auto animate-[pulse_1.8s_linear_infinite]">
+                        class="h-8 md:h-16 w-auto">
                     <p>Github</p>
                 </div>
-                <div class="flex flex-col items-center px-4">
+                <div class="flex flex-col items-center shadow-md px-4 transition-shadow duration-300 
+                hover:shadow-2xl">
                     <img src="./images/icons8-javascript.svg" alt="Javascript"
-                        class="h-8 md:h-16 w-auto animate-[pulse_1.7s_linear_infinite]">
+                        class="h-8 md:h-16 w-auto">
                     <p>Javascript</p>
                 </div>
-                <div class="flex flex-col items-center px-4">
+                <div class="flex flex-col items-center shadow-md px-4 transition-shadow duration-300 
+                hover:shadow-2xl">
                     <img src="./images/icons8-tailwind-css.svg" alt="taimwind"
-                        class="h-8 md:h-16 w-auto animate-[pulse_1.5s_linear_infinite]">
+                        class="h-8 md:h-16 w-auto">
                     <p>Tailwind-css</p>
                 </div>
-                <div class="flex flex-col items-center px-4">
+                <div class="flex flex-col items-center shadow-md px-4 transition-shadow duration-300 
+                hover:shadow-2xl">
                     <img src="./images/icons8-notion.svg" alt="notion"
-                        class="h-8 md:h-16 w-auto animate-[pulse_1.6s_linear_infinite]">
+                        class="h-8 md:h-16 w-auto">
                     <p>Notion</p>
                 </div>
-                <div class="flex flex-col items-center px-4">
+                <div class="flex flex-col items-center shadow-md px-4 transition-shadow duration-300 
+                hover:shadow-2xl">
                     <img src="./images/icons8-figma.svg" alt="figma"
-                        class="h-8 md:h-16 w-auto animate-[pulse_1.9s_linear_infinite]">
+                        class="h-8 md:h-16 w-auto">
                     <p>Figma</p>
                 </div>
             </div>
@@ -235,7 +244,7 @@
             </h2>
 
             <!-- liste projets -->
-            <div id="projects-container" class="gap-y-8 md:w-auto justify-evenly flex flex-wrap overflow-auto pb-2 ">
+            <div id="projects-container" class="gap-y-8 md:w-auto justify-evenly flex flex-wrap overflow-auto pb-2">
                 <!-- Cards ici depuis script.js  -->
             </div>
         </section>
@@ -248,7 +257,7 @@
                     <span class="h-px flex-1 bg-black"></span>
                 </span>
             </div>
-            <!-- colonne formation -->
+        <!-- colonne formation -->
             <div class="md:flex ">
                 <div class="m-6 rounded-lg md:w-1/2">
                     <h2>🎓 Formations</h2>
@@ -283,6 +292,7 @@
                         </li>
                     </ul>
                 </div>
+            <!-- colonne experiences -->
                 <div class=" m-6 rounded-lg md:w-1/2">
                     <h2>💼 Expériences</h2>
                     <ul class="flex flex-col my-2">
@@ -380,6 +390,7 @@
         </a>
     </div>
 
+    <!-- footer -->
     <footer class="w-full mt-10 border-t-2 pt-4 pb-8 border-zinc-500">
         <div class="flex sm:flex-row flex-col sm:justify-between items-center md:px-20 px-4">
             <div class="flex gap-4 items-center sm:text-xl text-sm text-zinc-500">
@@ -389,7 +400,6 @@
             <div class="text-lg text-orange-100">&copy;2025 celia SANSANO</div>
         </div>
     </footer>
-
 </body>
 
 </html>
