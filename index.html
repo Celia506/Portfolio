@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html class="scroll-smooth font-relaway" lang="fr">
 
@@ -50,7 +51,7 @@
 
                     <!--Menu MOBILE Button -->
                     <div class="lg:hidden flex items-center">
-                        <button id="mobile-menu-button" class="text-orange-200 hover:text-white focus:outline-none">
+                        <button id="mobile-menu-button" aria-label="ouvrir menu lateral" class="text-orange-200 hover:text-white focus:outline-none">
                             <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                 stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -65,7 +66,7 @@
             <div id="mobile-menu" class="absolute inset-0 bg-zinc-700 bg-opacity-50 rounded-lg z-50 hidden">
                 <div id="mobile-menu-content"
                     class="fixed inset-y-0 left-0 bg-zinc-600 w-64 p-6 transform -translate-x-full transition-transform">
-                    <button id="close-menu-button"
+                    <button id="close-menu-button" aria-label="fermer menu lateral"
                         class="text-orange-300 hover:text-orange-400 focus:outline-none mb-4">
                         <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                             stroke="currentColor">
@@ -148,7 +149,7 @@
                     <div
                         class="px-2 py-3 flex text-gray-700 font-semibold outline outline-orange-400 rounded-sm hover:bg-gradient-to-r from-orange-400 to-orange-300 hover:text-white">
                         Mon CV
-                        <a href="./CVCELIA_SANSANO.pdf" target="_blank"><svg xmlns="http://www.w3.org/2000/svg"
+                        <a href="./CVCELIA_SANSANO.pdf" aria-label="Ouverture du lien vers cv au format PDF" target="_blank"><svg xmlns="http://www.w3.org/2000/svg"
                                 fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
                                 class="size-6 mx-2">
                                 <path stroke-linecap="round" stroke-linejoin="round"
@@ -370,7 +371,7 @@
                             <textarea id="message" name="message" rows="4"
                                 class="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm caret-second outline-second  sm:text-sm"></textarea>
                         </div>
-                        <button type="submit"
+                        <button type="submit" aria-label="envoyer message"
                             class="w-full bg-second text-white p-2 rounded-md shadow-md hover:bg-gradient-to-r from-orange-400 to-orange-300">Envoyer</button>
                     </form>
                 </div>
@@ -379,7 +380,7 @@
     </main>
 
     <!-- bouton haut de page -->
-    <div id="scrollButton" class="hidden fixed bottom-2 -right-1 md:bottom-4 p-4 hover:scale-105">
+    <div id="scrollButton" aria-label="retour haut de page" class="hidden fixed bottom-2 -right-1 md:bottom-4 p-4 hover:scale-105">
         <a href="#aPropos">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white"
                 class="md:size-9 md:bg-second md:rounded-full">
