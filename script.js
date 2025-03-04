@@ -70,6 +70,12 @@ document.addEventListener("DOMContentLoaded", () => {
                         case 'PHP':
                             colorClass = 'font-semibold bg-orange-500';
                             break;
+                        case 'SQL':
+                            colorClass = 'font-semibold bg-gray-500';
+                            break;
+                        case 'React':
+                            colorClass = 'font-semibold bg-orange-100';
+                            break;
                         default:
                             colorClass = 'font-semibold bg-gray-800';
                     }
@@ -95,7 +101,7 @@ document.addEventListener("DOMContentLoaded", () => {
                                 </a>
                             </span>
                         </div>
-                        <div class=" flex flex-wrap mb-2 justify-center align-middle">${techList}
+                        <div class="flex flex-wrap mb-2 justify-center align-middle">${techList}
                         </div>
                     </div>
             `;
@@ -108,7 +114,7 @@ document.addEventListener("DOMContentLoaded", () => {
 // *************************************************
 // bouton haut de page 
 
-window.addEventListener('scroll', function() {
+window.addEventListener('scroll', function () {
     var scrollButton = document.getElementById("scrollButton");
 
     if (scrollButton) {
@@ -120,3 +126,62 @@ window.addEventListener('scroll', function() {
         }
     }
 });
+
+//******************************************* */
+// gestion formulaire
+
+document.getElementById("contact-form").addEventListener("submit", function(event) {
+    event.preventDefault(); // Empêche l'envoi immédiat
+
+    let isValid = true;
+
+    // Récupération des champs
+    let nameField = document.getElementById("name");
+    let emailField = document.getElementById("email");
+    let messageField = document.getElementById("message");
+
+    let name = nameField.value.trim();
+    let email = emailField.value.trim();
+    let message = messageField.value.trim();
+
+    // Supprime uniquement les erreurs des champs modifiés
+    clearError(nameField);
+    clearError(emailField);
+    clearError(messageField);
+
+    // Vérification du nom
+    if (name.length < 3) {
+        showError(nameField, "Le nom doit contenir au moins 3 caractères.");
+        isValid = false;
+    }
+
+    // Vérification de l'email
+    let emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailPattern.test(email)) {
+        showError(emailField, "Veuillez entrer une adresse email valide.");
+        isValid = false;
+    }
+
+    // Si toutes les validations sont OK
+    if (isValid) {
+        let mailtoLink = `mailto:celia.sansano@gmail.com?subject=Contact%20depuis%20le%20site&body=Nom:%20${encodeURIComponent(name)}%0AEmail:%20${encodeURIComponent(email)}%0AMessage:%20${encodeURIComponent(message)}`;
+        window.location.href = mailtoLink;
+    }
+});
+
+// Fonction pour afficher un message d'erreur sous un champ
+function showError(inputField, message) {
+    let error = document.createElement("p");
+    error.classList.add("error-message", "text-red-500", "text-sm", "mt-1");
+    error.textContent = message;
+    inputField.insertAdjacentElement("afterend", error);
+    inputField.focus(); // Mets le focus sur le champ en erreur
+}
+
+// Fonction pour supprimer l'erreur d'un champ si l'utilisateur le modifie
+function clearError(inputField) {
+    let errorMessage = inputField.nextElementSibling;
+    if (errorMessage && errorMessage.classList.contains("error-message")) {
+        errorMessage.remove();
+    }
+}
